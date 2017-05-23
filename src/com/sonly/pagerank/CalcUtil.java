@@ -18,7 +18,7 @@ public class CalcUtil {
   
 	/**
 	 * Method: getUrl
-	 * Description: obtain all url from string
+	 * Description: obtain all url from page
 	 * @param file
 	 * @return
 	 * @throws IOException 
@@ -38,7 +38,7 @@ public class CalcUtil {
 	
 	/**
 	 * Method: calcMatrix
-	 * Description: 
+	 * Description: calculate PR value
 	 * @param matrix
 	 * @param vector
 	 * @return
