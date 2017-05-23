@@ -69,13 +69,15 @@ public class FileOperator {
 	 * @param path
 	 * @throws IOException
 	 */
-	public static void writeFile(String[] strings, String path) throws IOException {
+	public static void writeFile(List<String> page, double[] vector, String path) throws IOException {
 		File file = new File(path);
 		
 		OutputStreamWriter outputStreamWriter = new OutputStreamWriter(new FileOutputStream(file));
 		BufferedWriter writer = new BufferedWriter(outputStreamWriter);
 		
-		for(String string : strings) {
+		String string  = new String();
+		for(int i = 0; i < page.size(); i++) {
+			string = page.get(i)+"£º"+vector[i];
 			writer.write(string);
 			writer.newLine();
 		}

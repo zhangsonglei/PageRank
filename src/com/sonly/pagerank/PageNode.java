@@ -1,5 +1,7 @@
 package com.sonly.pagerank;
 
+import java.util.List;
+
 /**
  * Class: PageNode
  * Description:  
@@ -8,11 +10,8 @@ package com.sonly.pagerank;
  * Date: 2017Äê5ÔÂ19ÈÕ
  */
 public class PageNode {
-	
 	private String pageName;	//the name of page
-	private String[] inUrl;		//the urls from other pages
-	private String[] outUrl;	//the urls to other pages
-	private int PR;
+	private List<String> outUrl;	//the urls to other pages
 	
 	public String getPageName() {
 		return pageName;
@@ -20,22 +19,10 @@ public class PageNode {
 	public void setPageName(String pageName) {
 		this.pageName = pageName;
 	}
-	public String[] getInUrl() {
-		return inUrl;
-	}
-	public void setInUrl(String[] inUrl) {
-		this.inUrl = inUrl;
-	}
-	public String[] getOutUrl() {
+	public List<String> getOutUrl() {
 		return outUrl;
 	}
-	public void setOutUrl(String[] outUrl) {
+	public void setOutUrl(List<String> outUrl) {
 		this.outUrl = outUrl;
-	}
-	public int getPR() {
-		return PR;
-	}
-	public void setPR(int pR) {
-		PR = pR;
 	}
 }
